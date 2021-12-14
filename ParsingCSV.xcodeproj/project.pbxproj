@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0713A6EA276475CA007B6772 /* ParsingCSVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A6E9276475CA007B6772 /* ParsingCSVApp.swift */; };
+		0713A6EC276475CA007B6772 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A6EB276475CA007B6772 /* ContentView.swift */; };
+		0713A6EE276475CB007B6772 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0713A6ED276475CB007B6772 /* Assets.xcassets */; };
+		0713A6F1276475CB007B6772 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0713A6F0276475CB007B6772 /* Preview Assets.xcassets */; };
+		0713A6F3276475CB007B6772 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A6F2276475CB007B6772 /* Persistence.swift */; };
+		0713A6F6276475CB007B6772 /* ParsingCSV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0713A6F4276475CB007B6772 /* ParsingCSV.xcdatamodeld */; };
+		0713A6FF2764765C007B6772 /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 0713A6FE2764765C007B6772 /* SwiftCSV */; };
+		0713A7012764769C007B6772 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7002764769C007B6772 /* Parser.swift */; };
+		0713A7072764B0C0007B6772 /* CustomStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7062764B0C0007B6772 /* CustomStructs.swift */; };
+		0713A7622765B5DB007B6772 /* BlocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7602765B5DB007B6772 /* BlocationData+CoreDataClass.swift */; };
+		0713A7632765B5DB007B6772 /* BlocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7612765B5DB007B6772 /* BlocationData+CoreDataProperties.swift */; };
+		0713A7662765B62A007B6772 /* AlocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7642765B62A007B6772 /* AlocationData+CoreDataClass.swift */; };
+		0713A7672765B62A007B6772 /* AlocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7652765B62A007B6772 /* AlocationData+CoreDataProperties.swift */; };
+		0713A7982765BD08007B6772 /* XlocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7682765BD07007B6772 /* XlocationData+CoreDataClass.swift */; };
+		0713A7992765BD08007B6772 /* XlocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7692765BD07007B6772 /* XlocationData+CoreDataProperties.swift */; };
+		0713A79A2765BD08007B6772 /* ElocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A76A2765BD07007B6772 /* ElocationData+CoreDataClass.swift */; };
+		0713A79B2765BD08007B6772 /* ElocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A76B2765BD07007B6772 /* ElocationData+CoreDataProperties.swift */; };
+		0713A79C2765BD08007B6772 /* OlocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A76C2765BD07007B6772 /* OlocationData+CoreDataClass.swift */; };
+		0713A79D2765BD08007B6772 /* OlocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A76D2765BD07007B6772 /* OlocationData+CoreDataProperties.swift */; };
+		0713A79E2765BD08007B6772 /* UlocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A76E2765BD07007B6772 /* UlocationData+CoreDataClass.swift */; };
+		0713A79F2765BD08007B6772 /* UlocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A76F2765BD07007B6772 /* UlocationData+CoreDataProperties.swift */; };
+		0713A7A02765BD08007B6772 /* ZlocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7702765BD07007B6772 /* ZlocationData+CoreDataClass.swift */; };
+		0713A7A12765BD08007B6772 /* ZlocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7712765BD07007B6772 /* ZlocationData+CoreDataProperties.swift */; };
+		0713A7A22765BD08007B6772 /* DlocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7722765BD07007B6772 /* DlocationData+CoreDataClass.swift */; };
+		0713A7A32765BD08007B6772 /* DlocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7732765BD08007B6772 /* DlocationData+CoreDataProperties.swift */; };
+		0713A7A42765BD08007B6772 /* QlocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7742765BD08007B6772 /* QlocationData+CoreDataClass.swift */; };
+		0713A7A52765BD08007B6772 /* QlocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7752765BD08007B6772 /* QlocationData+CoreDataProperties.swift */; };
+		0713A7A62765BD08007B6772 /* GlocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7762765BD08007B6772 /* GlocationData+CoreDataClass.swift */; };
+		0713A7A72765BD08007B6772 /* GlocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7772765BD08007B6772 /* GlocationData+CoreDataProperties.swift */; };
+		0713A7A82765BD08007B6772 /* RlocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7782765BD08007B6772 /* RlocationData+CoreDataClass.swift */; };
+		0713A7A92765BD08007B6772 /* RlocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7792765BD08007B6772 /* RlocationData+CoreDataProperties.swift */; };
+		0713A7AA2765BD08007B6772 /* NlocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A77A2765BD08007B6772 /* NlocationData+CoreDataClass.swift */; };
+		0713A7AB2765BD08007B6772 /* NlocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A77B2765BD08007B6772 /* NlocationData+CoreDataProperties.swift */; };
+		0713A7AC2765BD08007B6772 /* JlocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A77C2765BD08007B6772 /* JlocationData+CoreDataClass.swift */; };
+		0713A7AD2765BD08007B6772 /* JlocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A77D2765BD08007B6772 /* JlocationData+CoreDataProperties.swift */; };
+		0713A7AE2765BD08007B6772 /* YlocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A77E2765BD08007B6772 /* YlocationData+CoreDataClass.swift */; };
+		0713A7AF2765BD08007B6772 /* YlocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A77F2765BD08007B6772 /* YlocationData+CoreDataProperties.swift */; };
+		0713A7B02765BD08007B6772 /* TlocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7802765BD08007B6772 /* TlocationData+CoreDataClass.swift */; };
+		0713A7B12765BD08007B6772 /* TlocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7812765BD08007B6772 /* TlocationData+CoreDataProperties.swift */; };
+		0713A7B22765BD08007B6772 /* LlocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7822765BD08007B6772 /* LlocationData+CoreDataClass.swift */; };
+		0713A7B32765BD08007B6772 /* LlocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7832765BD08007B6772 /* LlocationData+CoreDataProperties.swift */; };
+		0713A7B42765BD08007B6772 /* PlocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7842765BD08007B6772 /* PlocationData+CoreDataClass.swift */; };
+		0713A7B52765BD08007B6772 /* PlocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7852765BD08007B6772 /* PlocationData+CoreDataProperties.swift */; };
+		0713A7B62765BD08007B6772 /* FlocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7862765BD08007B6772 /* FlocationData+CoreDataClass.swift */; };
+		0713A7B72765BD08007B6772 /* FlocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7872765BD08007B6772 /* FlocationData+CoreDataProperties.swift */; };
+		0713A7B82765BD08007B6772 /* WlocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7882765BD08007B6772 /* WlocationData+CoreDataClass.swift */; };
+		0713A7B92765BD08007B6772 /* WlocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7892765BD08007B6772 /* WlocationData+CoreDataProperties.swift */; };
+		0713A7BA2765BD08007B6772 /* VlocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A78A2765BD08007B6772 /* VlocationData+CoreDataClass.swift */; };
+		0713A7BB2765BD08007B6772 /* VlocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A78B2765BD08007B6772 /* VlocationData+CoreDataProperties.swift */; };
+		0713A7BC2765BD08007B6772 /* HlocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A78C2765BD08007B6772 /* HlocationData+CoreDataClass.swift */; };
+		0713A7BD2765BD08007B6772 /* HlocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A78D2765BD08007B6772 /* HlocationData+CoreDataProperties.swift */; };
+		0713A7BE2765BD08007B6772 /* ClocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A78E2765BD08007B6772 /* ClocationData+CoreDataClass.swift */; };
+		0713A7BF2765BD08007B6772 /* ClocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A78F2765BD08007B6772 /* ClocationData+CoreDataProperties.swift */; };
+		0713A7C02765BD08007B6772 /* IlocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7902765BD08007B6772 /* IlocationData+CoreDataClass.swift */; };
+		0713A7C12765BD08007B6772 /* IlocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7912765BD08007B6772 /* IlocationData+CoreDataProperties.swift */; };
+		0713A7C22765BD08007B6772 /* MlocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7922765BD08007B6772 /* MlocationData+CoreDataClass.swift */; };
+		0713A7C32765BD08007B6772 /* MlocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7932765BD08007B6772 /* MlocationData+CoreDataProperties.swift */; };
+		0713A7C42765BD08007B6772 /* SlocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7942765BD08007B6772 /* SlocationData+CoreDataClass.swift */; };
+		0713A7C52765BD08007B6772 /* SlocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7952765BD08007B6772 /* SlocationData+CoreDataProperties.swift */; };
+		0713A7C62765BD08007B6772 /* KlocationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7962765BD08007B6772 /* KlocationData+CoreDataClass.swift */; };
+		0713A7C72765BD08007B6772 /* KlocationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0713A7972765BD08007B6772 /* KlocationData+CoreDataProperties.swift */; };
+		0713A7CA2768D290007B6772 /* timezonesDB.json in Resources */ = {isa = PBXBuildFile; fileRef = 0713A7C92768D28F007B6772 /* timezonesDB.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0713A6E6276475CA007B6772 /* ParsingCSV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParsingCSV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0713A6E9276475CA007B6772 /* ParsingCSVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsingCSVApp.swift; sourceTree = "<group>"; };
+		0713A6EB276475CA007B6772 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0713A6ED276475CB007B6772 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0713A6F0276475CB007B6772 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0713A6F2276475CB007B6772 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		0713A6F5276475CB007B6772 /* ParsingCSV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ParsingCSV.xcdatamodel; sourceTree = "<group>"; };
+		0713A6F7276475CB007B6772 /* ParsingCSV.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ParsingCSV.entitlements; sourceTree = "<group>"; };
+		0713A7002764769C007B6772 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		0713A7062764B0C0007B6772 /* CustomStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStructs.swift; sourceTree = "<group>"; };
+		0713A7602765B5DB007B6772 /* BlocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BlocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A7612765B5DB007B6772 /* BlocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BlocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A7642765B62A007B6772 /* AlocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A7652765B62A007B6772 /* AlocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A7682765BD07007B6772 /* XlocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XlocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A7692765BD07007B6772 /* XlocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XlocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A76A2765BD07007B6772 /* ElocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ElocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A76B2765BD07007B6772 /* ElocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ElocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A76C2765BD07007B6772 /* OlocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OlocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A76D2765BD07007B6772 /* OlocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OlocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A76E2765BD07007B6772 /* UlocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UlocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A76F2765BD07007B6772 /* UlocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UlocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A7702765BD07007B6772 /* ZlocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZlocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A7712765BD07007B6772 /* ZlocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZlocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A7722765BD07007B6772 /* DlocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DlocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A7732765BD08007B6772 /* DlocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DlocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A7742765BD08007B6772 /* QlocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QlocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A7752765BD08007B6772 /* QlocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QlocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A7762765BD08007B6772 /* GlocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GlocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A7772765BD08007B6772 /* GlocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GlocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A7782765BD08007B6772 /* RlocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RlocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A7792765BD08007B6772 /* RlocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RlocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A77A2765BD08007B6772 /* NlocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NlocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A77B2765BD08007B6772 /* NlocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NlocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A77C2765BD08007B6772 /* JlocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JlocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A77D2765BD08007B6772 /* JlocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JlocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A77E2765BD08007B6772 /* YlocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YlocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A77F2765BD08007B6772 /* YlocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YlocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A7802765BD08007B6772 /* TlocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TlocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A7812765BD08007B6772 /* TlocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TlocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A7822765BD08007B6772 /* LlocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LlocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A7832765BD08007B6772 /* LlocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LlocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A7842765BD08007B6772 /* PlocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A7852765BD08007B6772 /* PlocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A7862765BD08007B6772 /* FlocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A7872765BD08007B6772 /* FlocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A7882765BD08007B6772 /* WlocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WlocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A7892765BD08007B6772 /* WlocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WlocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A78A2765BD08007B6772 /* VlocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VlocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A78B2765BD08007B6772 /* VlocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VlocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A78C2765BD08007B6772 /* HlocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HlocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A78D2765BD08007B6772 /* HlocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HlocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A78E2765BD08007B6772 /* ClocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A78F2765BD08007B6772 /* ClocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A7902765BD08007B6772 /* IlocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IlocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A7912765BD08007B6772 /* IlocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IlocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A7922765BD08007B6772 /* MlocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MlocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A7932765BD08007B6772 /* MlocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MlocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A7942765BD08007B6772 /* SlocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SlocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A7952765BD08007B6772 /* SlocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SlocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A7962765BD08007B6772 /* KlocationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KlocationData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0713A7972765BD08007B6772 /* KlocationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KlocationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0713A7C92768D28F007B6772 /* timezonesDB.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = timezonesDB.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0713A6E3276475CA007B6772 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0713A6FF2764765C007B6772 /* SwiftCSV in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0713A6DD276475CA007B6772 = {
+			isa = PBXGroup;
+			children = (
+				0713A7C82765BD3A007B6772 /* LocationData */,
+				0713A7062764B0C0007B6772 /* CustomStructs.swift */,
+				0713A6E8276475CA007B6772 /* ParsingCSV */,
+				0713A6E7276475CA007B6772 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0713A6E7276475CA007B6772 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0713A6E6276475CA007B6772 /* ParsingCSV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0713A6E8276475CA007B6772 /* ParsingCSV */ = {
+			isa = PBXGroup;
+			children = (
+				0713A7C92768D28F007B6772 /* timezonesDB.json */,
+				0713A6E9276475CA007B6772 /* ParsingCSVApp.swift */,
+				0713A6EB276475CA007B6772 /* ContentView.swift */,
+				0713A6ED276475CB007B6772 /* Assets.xcassets */,
+				0713A6F2276475CB007B6772 /* Persistence.swift */,
+				0713A6F7276475CB007B6772 /* ParsingCSV.entitlements */,
+				0713A6F4276475CB007B6772 /* ParsingCSV.xcdatamodeld */,
+				0713A6EF276475CB007B6772 /* Preview Content */,
+				0713A7002764769C007B6772 /* Parser.swift */,
+			);
+			path = ParsingCSV;
+			sourceTree = "<group>";
+		};
+		0713A6EF276475CB007B6772 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0713A6F0276475CB007B6772 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0713A7C82765BD3A007B6772 /* LocationData */ = {
+			isa = PBXGroup;
+			children = (
+				0713A7692765BD07007B6772 /* XlocationData+CoreDataProperties.swift */,
+				0713A76A2765BD07007B6772 /* ElocationData+CoreDataClass.swift */,
+				0713A76B2765BD07007B6772 /* ElocationData+CoreDataProperties.swift */,
+				0713A76C2765BD07007B6772 /* OlocationData+CoreDataClass.swift */,
+				0713A76D2765BD07007B6772 /* OlocationData+CoreDataProperties.swift */,
+				0713A76E2765BD07007B6772 /* UlocationData+CoreDataClass.swift */,
+				0713A76F2765BD07007B6772 /* UlocationData+CoreDataProperties.swift */,
+				0713A7702765BD07007B6772 /* ZlocationData+CoreDataClass.swift */,
+				0713A7712765BD07007B6772 /* ZlocationData+CoreDataProperties.swift */,
+				0713A7722765BD07007B6772 /* DlocationData+CoreDataClass.swift */,
+				0713A7732765BD08007B6772 /* DlocationData+CoreDataProperties.swift */,
+				0713A7742765BD08007B6772 /* QlocationData+CoreDataClass.swift */,
+				0713A7752765BD08007B6772 /* QlocationData+CoreDataProperties.swift */,
+				0713A7762765BD08007B6772 /* GlocationData+CoreDataClass.swift */,
+				0713A7772765BD08007B6772 /* GlocationData+CoreDataProperties.swift */,
+				0713A7782765BD08007B6772 /* RlocationData+CoreDataClass.swift */,
+				0713A7792765BD08007B6772 /* RlocationData+CoreDataProperties.swift */,
+				0713A77A2765BD08007B6772 /* NlocationData+CoreDataClass.swift */,
+				0713A77B2765BD08007B6772 /* NlocationData+CoreDataProperties.swift */,
+				0713A77C2765BD08007B6772 /* JlocationData+CoreDataClass.swift */,
+				0713A77D2765BD08007B6772 /* JlocationData+CoreDataProperties.swift */,
+				0713A77E2765BD08007B6772 /* YlocationData+CoreDataClass.swift */,
+				0713A77F2765BD08007B6772 /* YlocationData+CoreDataProperties.swift */,
+				0713A7802765BD08007B6772 /* TlocationData+CoreDataClass.swift */,
+				0713A7812765BD08007B6772 /* TlocationData+CoreDataProperties.swift */,
+				0713A7822765BD08007B6772 /* LlocationData+CoreDataClass.swift */,
+				0713A7832765BD08007B6772 /* LlocationData+CoreDataProperties.swift */,
+				0713A7842765BD08007B6772 /* PlocationData+CoreDataClass.swift */,
+				0713A7852765BD08007B6772 /* PlocationData+CoreDataProperties.swift */,
+				0713A7862765BD08007B6772 /* FlocationData+CoreDataClass.swift */,
+				0713A7872765BD08007B6772 /* FlocationData+CoreDataProperties.swift */,
+				0713A7882765BD08007B6772 /* WlocationData+CoreDataClass.swift */,
+				0713A7892765BD08007B6772 /* WlocationData+CoreDataProperties.swift */,
+				0713A78A2765BD08007B6772 /* VlocationData+CoreDataClass.swift */,
+				0713A78B2765BD08007B6772 /* VlocationData+CoreDataProperties.swift */,
+				0713A78C2765BD08007B6772 /* HlocationData+CoreDataClass.swift */,
+				0713A78D2765BD08007B6772 /* HlocationData+CoreDataProperties.swift */,
+				0713A78E2765BD08007B6772 /* ClocationData+CoreDataClass.swift */,
+				0713A78F2765BD08007B6772 /* ClocationData+CoreDataProperties.swift */,
+				0713A7902765BD08007B6772 /* IlocationData+CoreDataClass.swift */,
+				0713A7912765BD08007B6772 /* IlocationData+CoreDataProperties.swift */,
+				0713A7922765BD08007B6772 /* MlocationData+CoreDataClass.swift */,
+				0713A7932765BD08007B6772 /* MlocationData+CoreDataProperties.swift */,
+				0713A7942765BD08007B6772 /* SlocationData+CoreDataClass.swift */,
+				0713A7952765BD08007B6772 /* SlocationData+CoreDataProperties.swift */,
+				0713A7962765BD08007B6772 /* KlocationData+CoreDataClass.swift */,
+				0713A7972765BD08007B6772 /* KlocationData+CoreDataProperties.swift */,
+				0713A7642765B62A007B6772 /* AlocationData+CoreDataClass.swift */,
+				0713A7652765B62A007B6772 /* AlocationData+CoreDataProperties.swift */,
+				0713A7602765B5DB007B6772 /* BlocationData+CoreDataClass.swift */,
+				0713A7612765B5DB007B6772 /* BlocationData+CoreDataProperties.swift */,
+				0713A7682765BD07007B6772 /* XlocationData+CoreDataClass.swift */,
+			);
+			path = LocationData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0713A6E5276475CA007B6772 /* ParsingCSV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0713A6FA276475CB007B6772 /* Build configuration list for PBXNativeTarget "ParsingCSV" */;
+			buildPhases = (
+				0713A6E2276475CA007B6772 /* Sources */,
+				0713A6E3276475CA007B6772 /* Frameworks */,
+				0713A6E4276475CA007B6772 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParsingCSV;
+			packageProductDependencies = (
+				0713A6FE2764765C007B6772 /* SwiftCSV */,
+			);
+			productName = ParsingCSV;
+			productReference = 0713A6E6276475CA007B6772 /* ParsingCSV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0713A6DE276475CA007B6772 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					0713A6E5276475CA007B6772 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 0713A6E1276475CA007B6772 /* Build configuration list for PBXProject "ParsingCSV" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0713A6DD276475CA007B6772;
+			packageReferences = (
+				0713A6FD2764765C007B6772 /* XCRemoteSwiftPackageReference "SwiftCSV" */,
+			);
+			productRefGroup = 0713A6E7276475CA007B6772 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0713A6E5276475CA007B6772 /* ParsingCSV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0713A6E4276475CA007B6772 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0713A6F1276475CB007B6772 /* Preview Assets.xcassets in Resources */,
+				0713A6EE276475CB007B6772 /* Assets.xcassets in Resources */,
+				0713A7CA2768D290007B6772 /* timezonesDB.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0713A6E2276475CA007B6772 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0713A7AC2765BD08007B6772 /* JlocationData+CoreDataClass.swift in Sources */,
+				0713A79B2765BD08007B6772 /* ElocationData+CoreDataProperties.swift in Sources */,
+				0713A7C52765BD08007B6772 /* SlocationData+CoreDataProperties.swift in Sources */,
+				0713A7C42765BD08007B6772 /* SlocationData+CoreDataClass.swift in Sources */,
+				0713A7A12765BD08007B6772 /* ZlocationData+CoreDataProperties.swift in Sources */,
+				0713A79E2765BD08007B6772 /* UlocationData+CoreDataClass.swift in Sources */,
+				0713A7C72765BD08007B6772 /* KlocationData+CoreDataProperties.swift in Sources */,
+				0713A7C22765BD08007B6772 /* MlocationData+CoreDataClass.swift in Sources */,
+				0713A7632765B5DB007B6772 /* BlocationData+CoreDataProperties.swift in Sources */,
+				0713A7072764B0C0007B6772 /* CustomStructs.swift in Sources */,
+				0713A7C62765BD08007B6772 /* KlocationData+CoreDataClass.swift in Sources */,
+				0713A7BA2765BD08007B6772 /* VlocationData+CoreDataClass.swift in Sources */,
+				0713A7B82765BD08007B6772 /* WlocationData+CoreDataClass.swift in Sources */,
+				0713A7A02765BD08007B6772 /* ZlocationData+CoreDataClass.swift in Sources */,
+				0713A7A72765BD08007B6772 /* GlocationData+CoreDataProperties.swift in Sources */,
+				0713A7BE2765BD08007B6772 /* ClocationData+CoreDataClass.swift in Sources */,
+				0713A6F3276475CB007B6772 /* Persistence.swift in Sources */,
+				0713A79A2765BD08007B6772 /* ElocationData+CoreDataClass.swift in Sources */,
+				0713A7662765B62A007B6772 /* AlocationData+CoreDataClass.swift in Sources */,
+				0713A7AA2765BD08007B6772 /* NlocationData+CoreDataClass.swift in Sources */,
+				0713A7B02765BD08007B6772 /* TlocationData+CoreDataClass.swift in Sources */,
+				0713A7AF2765BD08007B6772 /* YlocationData+CoreDataProperties.swift in Sources */,
+				0713A6EC276475CA007B6772 /* ContentView.swift in Sources */,
+				0713A7982765BD08007B6772 /* XlocationData+CoreDataClass.swift in Sources */,
+				0713A7A22765BD08007B6772 /* DlocationData+CoreDataClass.swift in Sources */,
+				0713A79C2765BD08007B6772 /* OlocationData+CoreDataClass.swift in Sources */,
+				0713A7622765B5DB007B6772 /* BlocationData+CoreDataClass.swift in Sources */,
+				0713A7012764769C007B6772 /* Parser.swift in Sources */,
+				0713A7A62765BD08007B6772 /* GlocationData+CoreDataClass.swift in Sources */,
+				0713A7B22765BD08007B6772 /* LlocationData+CoreDataClass.swift in Sources */,
+				0713A7C32765BD08007B6772 /* MlocationData+CoreDataProperties.swift in Sources */,
+				0713A6EA276475CA007B6772 /* ParsingCSVApp.swift in Sources */,
+				0713A7A52765BD08007B6772 /* QlocationData+CoreDataProperties.swift in Sources */,
+				0713A7B62765BD08007B6772 /* FlocationData+CoreDataClass.swift in Sources */,
+				0713A7672765B62A007B6772 /* AlocationData+CoreDataProperties.swift in Sources */,
+				0713A6F6276475CB007B6772 /* ParsingCSV.xcdatamodeld in Sources */,
+				0713A7AE2765BD08007B6772 /* YlocationData+CoreDataClass.swift in Sources */,
+				0713A79D2765BD08007B6772 /* OlocationData+CoreDataProperties.swift in Sources */,
+				0713A7BF2765BD08007B6772 /* ClocationData+CoreDataProperties.swift in Sources */,
+				0713A7B12765BD08007B6772 /* TlocationData+CoreDataProperties.swift in Sources */,
+				0713A7A32765BD08007B6772 /* DlocationData+CoreDataProperties.swift in Sources */,
+				0713A7B72765BD08007B6772 /* FlocationData+CoreDataProperties.swift in Sources */,
+				0713A7C12765BD08007B6772 /* IlocationData+CoreDataProperties.swift in Sources */,
+				0713A7BC2765BD08007B6772 /* HlocationData+CoreDataClass.swift in Sources */,
+				0713A7AD2765BD08007B6772 /* JlocationData+CoreDataProperties.swift in Sources */,
+				0713A7B52765BD08007B6772 /* PlocationData+CoreDataProperties.swift in Sources */,
+				0713A79F2765BD08007B6772 /* UlocationData+CoreDataProperties.swift in Sources */,
+				0713A7B42765BD08007B6772 /* PlocationData+CoreDataClass.swift in Sources */,
+				0713A7BD2765BD08007B6772 /* HlocationData+CoreDataProperties.swift in Sources */,
+				0713A7992765BD08007B6772 /* XlocationData+CoreDataProperties.swift in Sources */,
+				0713A7B32765BD08007B6772 /* LlocationData+CoreDataProperties.swift in Sources */,
+				0713A7A92765BD08007B6772 /* RlocationData+CoreDataProperties.swift in Sources */,
+				0713A7BB2765BD08007B6772 /* VlocationData+CoreDataProperties.swift in Sources */,
+				0713A7C02765BD08007B6772 /* IlocationData+CoreDataClass.swift in Sources */,
+				0713A7AB2765BD08007B6772 /* NlocationData+CoreDataProperties.swift in Sources */,
+				0713A7A82765BD08007B6772 /* RlocationData+CoreDataClass.swift in Sources */,
+				0713A7B92765BD08007B6772 /* WlocationData+CoreDataProperties.swift in Sources */,
+				0713A7A42765BD08007B6772 /* QlocationData+CoreDataClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0713A6F8276475CB007B6772 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0713A6F9276475CB007B6772 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		0713A6FB276475CB007B6772 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ParsingCSV/ParsingCSV.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ParsingCSV/Preview Content\"";
+				DEVELOPMENT_TEAM = QTGLTH5XT3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = InterGalatic.ParsingCSV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0713A6FC276475CB007B6772 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ParsingCSV/ParsingCSV.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ParsingCSV/Preview Content\"";
+				DEVELOPMENT_TEAM = QTGLTH5XT3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = InterGalatic.ParsingCSV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0713A6E1276475CA007B6772 /* Build configuration list for PBXProject "ParsingCSV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0713A6F8276475CB007B6772 /* Debug */,
+				0713A6F9276475CB007B6772 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0713A6FA276475CB007B6772 /* Build configuration list for PBXNativeTarget "ParsingCSV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0713A6FB276475CB007B6772 /* Debug */,
+				0713A6FC276475CB007B6772 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0713A6FD2764765C007B6772 /* XCRemoteSwiftPackageReference "SwiftCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftcsv/SwiftCSV.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0713A6FE2764765C007B6772 /* SwiftCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0713A6FD2764765C007B6772 /* XCRemoteSwiftPackageReference "SwiftCSV" */;
+			productName = SwiftCSV;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		0713A6F4276475CB007B6772 /* ParsingCSV.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0713A6F5276475CB007B6772 /* ParsingCSV.xcdatamodel */,
+			);
+			currentVersion = 0713A6F5276475CB007B6772 /* ParsingCSV.xcdatamodel */;
+			path = ParsingCSV.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0713A6DE276475CA007B6772 /* Project object */;
+}
